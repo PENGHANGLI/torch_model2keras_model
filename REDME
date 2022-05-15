@@ -1,0 +1,6 @@
+
+  package       version
+pytorch2keras    0.2.4
+tensorflow       2.6.0
+torch            1.11.0
+keras            2.6.0
