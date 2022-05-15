@@ -36,7 +36,7 @@ def load_torch_model(arch='vgg16', pretrained_dict=None):
 def torch2keras(torch_model):
     dummy_input = torch.rand(1, 3, 256, 256)
     torch_model.eval()
-    keras_model = pytorch_to_keras(torch_model, dummy_input, [(3, 256, 256,)], verbose=True)
+    keras_model = pytorch_to_keras(torch_model, dummy_input, (3, 256, 256), verbose=True)
     keras_model.summary()
     keras_model.save('imagenet-vgg16.h5')
     return keras_model
